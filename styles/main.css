@@ -51,6 +51,10 @@
     --color-primary: #217BF4;
     --color-secondary: #FFAF2E;
     --color-text:#0A093D;
+    --full-width: 1170px;
+
+    --space-1: 1rem;
+    --space-1-5: 1.5rem;
 }
 
 body{
@@ -59,4 +63,14 @@ body{
 }
 .imagen{
     width: 100px;
+}
+.header{
+    width: var(--full-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav{
+    display: flex;
+    gap: 72px;
 }
