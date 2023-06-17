@@ -132,3 +132,8 @@ a {
   all: unset;
   width: 120px;
 } 
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+}
