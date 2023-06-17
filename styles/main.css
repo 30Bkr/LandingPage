@@ -48,11 +48,13 @@
 /* arriba esta el reset */
 
 :root {
-    --color-primary: #217BF4;
+    /* --color-primary: #217BF4; */
+    --color-primary: rgb(33, 123, 244);
+    --color-primary-10: rgba(33, 123, 244, 0.1);
     --color-secondary: #FFAF2E;
     --color-heading:#0A093D;
     --color-white:#FFFFFF;
-    --color-text:#656464
+    --color-text:#656464;
     --full-width: 73.125rem;
 
     --space-1: 1rem;
@@ -83,14 +85,20 @@ a {
   padding: 0 40px;
   border-radius: 1rem;
 }
+.container{
+  width: var(--full-width);
+  margin: 0 auto;
+}
 .imagen{
     width: 9.0625rem;
     height: 2.1875rem;
 }
+.header {
+  border-bottom: solid 1px var(--color-primary-10);
+  padding: 1.5rem 0;
+}
 
-.header{
-    width: var(--full-width);
-    margin: 0 auto;
+.header__container{
     display: grid;
     align-items: center;
     grid-template-columns: 9.0625rem 1fr auto;
