@@ -175,14 +175,40 @@ a {
   align-items: center;
   gap: 200px;
 }
-.whats-netbooks h2{
+.whats-netbooks__content h2{
   font-size: 1.125rem;
   color: var(--color-primary);
 }
-.whats-netbooks h3{
+.whats-netbooks__content h3{
   font-size: 2.25rem;
   line-height: 1.33;
   margin-bottom: 16px;
+}
+.whats-netbooks__content p{
+  margin-bottom: 1rem;
+}
+.whats-netbooks__content ul{
+  font-size: 1.125rem;
+  list-style: none;
+  padding-left: 0;
+}
+.whats-netbooks__content li{
+  position: relative;
+  padding-left: 2rem;
+}
+.whats-netbooks__content li:before{
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  border: solid 1px var(--color-primary-10);
+  box-shadow: 1px 1px 1px 3px var(--color-primary-10);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  /* truco para centrar*/
+  top: 50%;
+  transform: translateY(-50%);
 }
 .whats-netbooks__images{
   display: grid;
@@ -190,7 +216,8 @@ a {
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  
+  flex-shrink: 0;
+  flex-basis: 564px;
 }
 .whats-netbooks__images img {
   border-radius: 1rem;
