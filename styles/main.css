@@ -170,3 +170,42 @@ a {
   display: flex;
   gap: 1rem;
 }
+.whats-netbooks{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.whats-netbooks h2{
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+.whats-netbooks h3{
+  font-size: 2.25rem;
+  line-height: 1.33;
+  margin-bottom: 16px;
+
+}
+.whats-netbooks__images{
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+}
+.whats-netbooks__images img {
+  border-radius: 1rem;
+}
+.whats-netbooks__images-1 {
+  height: 240px;
+  width: 150px;
+  grid-row: 1 / -1;
+}
+.whats-netbooks__images-2 {
+  height: 160px;
+  width: 150px;
+}
+.whats-netbooks__images-3 {
+  height: 160px;
+  width: 150px;
+}
