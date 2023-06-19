@@ -236,6 +236,11 @@ a {
   height: 10rem;
   width: 9.375rem;
 }
+.achievement{
+  display: grid;
+  grid-template-columns: 340px 340px 1fr;
+  gap: 1.5rem;
+}
 .achievement .card{ 
   /* Truco para unir linear gradient con border radius*/
   background: linear-gradient(#fff, #fff) padding-box,
@@ -243,7 +248,9 @@ a {
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 3rem 1.125rem 2.5rem 2.5rem;
+  transition: box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
 }
 .achievement .card:hover{
-  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
-}
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.54);
+  transform: translate(-1px, -8px);
+} 
