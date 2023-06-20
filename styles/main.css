@@ -254,13 +254,35 @@ a {
   position: relative;
   padding: 1.25rem;
 }
-.achievement .card a:after{
+
+/* .achievement .card a:after{
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   content: "";
-  background-image: url("/images/busqueda.svg");
+  /* truco por si una imagen no se adapta a su contenedor */
+  /* background-image: url("/images/busqueda.svg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  width: 11px;
+  height: 11px;
+} */ 
+.achievement .card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.achievement .card a img {
+  width: 12px;
+  height: 12px;
+}
+
+.achievement .card a:hover{
+  color: var(--color-primary);
+}
+.achievement .card a img::after{
   width: 10px;
   height: 10px;
 }
