@@ -240,7 +240,7 @@ p.section__subtitle{
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
   align-items: center;
-  margin-bottom: 11.25rem;
+  margin-bottom: 6rem;
 }
 .achievement .card{ 
   /* Truco para unir linear gradient con border radius*/
@@ -337,7 +337,8 @@ a.link__arrowed:hover svg path {
 }
 .community {
   background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 25.5%, #F1F6FD 58.57%, #FFFFFF 100%);
-
+  padding: 5rem 0;
+  margin-bottom: 7.5rem;
 }
 
 .community__items{
@@ -399,16 +400,61 @@ a.link__arrowed:hover svg path {
 .team__tabs{
   background-color: var(--color-primary-10);
   width: 28.125rem;
-  margin: 0 auto;
+  margin: 40px auto;
+  display: flex;
+  border-radius: 1rem;
+  padding: 0.5rem;
+
 }
-.team__tab--active{
+.team__tab{
+  border: 0;
+  border-radius: 0.5rem; 
   height: 56px;
   display: inline-flex;
   padding: 0 32px;
   align-items: center;
+  background-color: transparent;
+  flex-grow: 1;
+  justify-content: center;
+  cursor: pointer;
+}
+.team__tab:hover:not(:last-child){
+  color: var(--color-primary);
+}
+.team__tab--active{
   background-color: var(--color-primary);
   color: var(--color-white);
-  border: 0;
-  border-radius: 16px;
-  
+}
+.team__members{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.team__members-card{
+  text-align: center;
+  border: solid 1px #F3F3F3;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+.team__members-card:hover {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  transform: translate(-4px, -4px);
+}
+.team__member-picture{
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team__member-avatar{
+  display: inline-block;
+  position: relative;
+}
+.team__member-name{
+  font-size: 1.5rem;
+}
+.team__member-username{
+  font-size: 1rem;
 }
