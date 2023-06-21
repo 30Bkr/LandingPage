@@ -240,6 +240,7 @@ p.section__subtitle{
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
   align-items: center;
+  margin-bottom: 11.25rem;
 }
 .achievement .card{ 
   /* Truco para unir linear gradient con border radius*/
@@ -336,12 +337,20 @@ a.link__arrowed:hover svg path {
 }
 .community {
   background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 25.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+
 }
 
 .community__items{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 2.5rem;
+}
+
+.community__content{
+  text-align: center;
+  width: 28rem;
+  margin: 0 auto;
+  margin: 0 auto 4rem;
 }
 .community__card{
   padding: 2.5rem 4rem 2.5rem 2.5rem;
@@ -362,6 +371,7 @@ a.link__arrowed:hover svg path {
   aspect-ratio: 1/1;
   border-radius: 1.5rem;
 }
+
 .community__members .community__card--icon,
 .community__custom .community__card--icon{
   background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
@@ -376,4 +386,29 @@ a.link__arrowed:hover svg path {
 .community__scroll .community__card--icon{
   background: linear-gradient(154.49deg, #ffd085 6.61%, #ffaf2e 89.72%);
   box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+/* .team{
+
+} */
+.team__content{
+  text-align: center;
+  width: 28rem;
+  margin: 0 auto;
+  margin: 0 auto 4rem;
+}
+.team__tabs{
+  background-color: var(--color-primary-10);
+  width: 28.125rem;
+  margin: 0 auto;
+}
+.team__tab--active{
+  height: 56px;
+  display: inline-flex;
+  padding: 0 32px;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 0;
+  border-radius: 16px;
+  
 }
