@@ -90,7 +90,7 @@ a {
   border: solid .0625rem var(--color-primary);
   color: var(--color-primary);
 }
-.btn__large{
+.btn--large{
   height: 4rem;
   padding: 0 3rem;
 
@@ -180,11 +180,13 @@ a {
   gap: 12.5rem;
   margin: 96px auto;
 }
-.whats-netbooks__content h2{
+h2.section__title{
   font-size: 18px;
   color: var(--color-primary);
 }
-.whats-netbooks__content h3{
+p.section__subtitle{
+  color: var(--color-heading);
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.33;
   margin-bottom: 1rem;
@@ -244,6 +246,7 @@ a {
   display: grid;
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
+  align-items: center;
 }
 .achievement .card{ 
   /* Truco para unir linear gradient con border radius*/
@@ -300,6 +303,17 @@ a {
 .achievement .card__subtitle b{
   color: var(--color-primary);
 }
+.achievement__content {
+  margin-inline-start: auto;
+  width: 23.75rem;
+}
+.achievement__content p:not(.section__subtitle) {
+  margin-bottom: 2rem;
+ 
+}
+.achievement .card.awards{
+  height: 100%;
+}
 .card.rating .card__title, .card.awards .card__title{
   display: flex;
   gap: 0.5rem;
@@ -320,7 +334,7 @@ a {
   border-radius: 50%;
   aspect-ratio: 1/1;
   box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
-}
+} 
 .card__avatar img:not(f:first-child){
   margin-left: -6px;
 }
