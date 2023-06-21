@@ -153,7 +153,7 @@ a {
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
-  color: var(--color-primarys);
+  color: var(--color-primary);
   padding: 0 32px;
   height: 32px;
 }
@@ -170,10 +170,11 @@ a {
   display: flex;
   gap: 16px;
 }
+/*
 .hero__image img{
   width: 23.75rem;
   height: 23.75rem;
-}
+}*/
 .whats-netbooks{
   display: flex;
   align-items: center;
@@ -230,18 +231,10 @@ p.section__subtitle{
   border-radius: 16px;
 }
 .whats-netbooks__images-1 {
-  height: 15rem;
-  width: 9.375rem;
+  
   grid-row: 1 / -1;
 }
-.whats-netbooks__images-2 {
-  height: 10rem;
-  width: 9.375rem;
-}
-.whats-netbooks__images-3 {
-  height: 10rem;
-  width: 9.375rem;
-}
+
 .achievement{
   display: grid;
   grid-template-columns: 340px 340px 1fr;
@@ -293,6 +286,9 @@ p.section__subtitle{
 .achievement .card:hover{
   box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.54);
   transform: translate(-1px, -8px);
+}
+a.link__arrowed:hover svg path {
+  stroke: var(--color-primary);
 }
 .achievement .card__subtitle{
   margin-bottom: 2.5rem;
@@ -364,8 +360,20 @@ p.section__subtitle{
   flex-shrink: 0;
   width: 66px;
   aspect-ratio: 1/1;
-  background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217);
-  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
   border-radius: 1.5rem;
-  
+}
+.community__members .community__card--icon,
+.community__custom .community__card--icon{
+  background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+}
+.community__groups .community__card--icon,
+.community__builder .community__card--icon{
+  background: linear-gradient(154.49deg, #ff858a 6.61%, #f04148 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+}
+.community__forum .community__card--icon,
+.community__scroll .community__card--icon{
+  background: linear-gradient(154.49deg, #ffd085 6.61%, #ffaf2e 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
 }
