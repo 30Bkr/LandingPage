@@ -447,10 +447,18 @@ a.link__arrowed:hover svg path {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--color-primary-10);
 }
+
 .team__member-avatar{
   display: inline-block;
   position: relative;
+}
+.team__member-check{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  right: 76px;
 }
 .team__member-name{
   font-size: 1.5rem;
@@ -512,11 +520,56 @@ a.link__arrowed:hover svg path {
 
 .app__buttons {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.5rem; 
   margin-top: 1.5rem;
 }
 
 .app__buttons img {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 22px rgba(178, 188, 208, 0.21);
+}
+.news{
+  margin-bottom: 7.5rem;
+  
+}
+.news__content{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.news__article{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.5rem;
+}
+.news__article img{
+  border-radius: 1.5rem;
+  width: 100%;
+}
+.news__article-text{
+  padding-top: 1.5rem;
+  padding-left: 4rem;
+  position: relative;
+}
+.news__article-text::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2.5rem;
+  background-color: orange;
+  top: 2.375rem;
+  left: 1rem;
+}
+.news__article-text h3{
+  padding-bottom: 1.5rem;
+}
+.news__article-text a{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.news__article-text a:hover,
+.news__article-text a:hover svg path {
+  color: var(--color-primary);
+  stroke: var(--color-primary)
 }
